@@ -153,7 +153,7 @@
 
         .news-card p {
             font-size: 16px;
-            color: #e3e3e3;
+            color: #ffffff;
             margin: 0 0 22px 0;
             flex: 1;
             font-family: 'Roboto', Arial, sans-serif;
@@ -223,7 +223,7 @@
                 return;
             }
 
-            const url = `/api/news?query=${encodeURIComponent(query)}`;
+            const url = `/api/news?query=${encodeURIComponent(squery)}`;
 
             try {
                 const res = await fetch(url);
