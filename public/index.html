@@ -223,9 +223,7 @@
                 return;
             }
 
-            const apiKey = "da0722985fa54f1a885be4817a174d3b"
-            const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&sortBy=popularity&pageSize=10&apiKey=${apiKey}`;
-            console.log("Using API URL:", url);
+            const url = `/api/news?query=${encodeURIComponent(query)}`;
 
             try {
                 const res = await fetch(url);
