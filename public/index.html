@@ -181,73 +181,206 @@
         }
 
         @media (max-width: 600px) {
-    body {
-        padding: 0;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px 8px 0 8px;
-        gap: 12px;
-    }
-    .logo {
-        font-size: 1.4rem;
-        gap: 6px;
-        padding-bottom: 4px;
-    }
-    .search-box {
-        width: 100%;
-        padding: 4px 8px;
-        border-radius: 20px;
-        box-shadow: 0 1px 6px rgba(0,255,255,0.08);
-    }
-    .search-box input[type="text"] {
-        width: 100%;
-        min-width: 0;
-        font-size: 15px;
-        padding: 10px 8px;
-    }
-    .search-box button {
-        padding: 8px 14px;
-        font-size: 14px;
-        margin-left: 6px;
-        border-radius: 16px;
-    }
-    main {
-        padding: 0 6px;
-        margin-top: 18px;
-    }
-    #news-container {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        margin-top: 10px;
-    }
-    .news-card {
-        min-height: 340px;
-        border-radius: 12px;
-        box-shadow: 0 2px 12px rgba(0,255,255,0.13);
-    }
-    .news-card img {
-        height: 140px;
-        border-bottom-width: 1.5px;
-    }
-    .news-content {
-        padding: 14px 10px 10px 10px;
-    }
-    .news-card h3 {
-        font-size: 16px;
-        margin-bottom: 8px;
-    }
-    .news-card p {
-        font-size: 13px;
-        margin-bottom: 14px;
-    }
-    .news-card a {
-        padding: 6px 14px;
-        font-size: 13px;
-        border-radius: 12px;
-    }
-}
+            body {
+                padding: 0;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px 8px 0 8px;
+                gap: 12px;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+                gap: 6px;
+                padding-bottom: 4px;
+            }
+
+            .search-box {
+                width: 100%;
+                padding: 4px 8px;
+                border-radius: 20px;
+                box-shadow: 0 1px 6px rgba(0, 255, 255, 0.08);
+            }
+
+            .search-box input[type="text"] {
+                width: 100%;
+                min-width: 0;
+                font-size: 15px;
+                padding: 10px 8px;
+            }
+
+            .search-box button {
+                padding: 8px 14px;
+                font-size: 14px;
+                margin-left: 6px;
+                border-radius: 16px;
+            }
+
+            main {
+                padding: 0 6px;
+                margin-top: 18px;
+            }
+
+            #news-container {
+                grid-template-columns: 1fr;
+                gap: 18px;
+                margin-top: 10px;
+            }
+
+            .news-card {
+                min-height: 340px;
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(0, 255, 255, 0.13);
+            }
+
+            .news-card img {
+                height: 140px;
+                border-bottom-width: 1.5px;
+            }
+
+            .news-content {
+                padding: 14px 10px 10px 10px;
+            }
+
+            .news-card h3 {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+
+            .news-card p {
+                font-size: 13px;
+                margin-bottom: 14px;
+            }
+
+            .news-card a {
+                padding: 6px 14px;
+                font-size: 13px;
+                border-radius: 12px;
+            }
+
+            /* From Uiverse.io by Nawsome */
+            .loader {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 10;
+                width: 160px;
+                height: 100px;
+                margin-left: -80px;
+                margin-top: -50px;
+                border-radius: 5px;
+                background: #1e3f57;
+                animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
+            }
+
+            .loader:nth-child(2) {
+                z-index: 11;
+                width: 150px;
+                height: 90px;
+                margin-top: -45px;
+                margin-left: -75px;
+                border-radius: 3px;
+                background: #3c517d;
+                animation-name: dot2_;
+            }
+
+            .loader:nth-child(3) {
+                z-index: 12;
+                width: 40px;
+                height: 20px;
+                margin-top: 50px;
+                margin-left: -20px;
+                border-radius: 0 0 5px 5px;
+                background: #6bb2cd;
+                animation-name: dot3_;
+            }
+
+            @keyframes dot1_ {
+
+                3%,
+                97% {
+                    width: 160px;
+                    height: 100px;
+                    margin-top: -50px;
+                    margin-left: -80px;
+                }
+
+                30%,
+                36% {
+                    width: 80px;
+                    height: 120px;
+                    margin-top: -60px;
+                    margin-left: -40px;
+                }
+
+                63%,
+                69% {
+                    width: 40px;
+                    height: 80px;
+                    margin-top: -40px;
+                    margin-left: -20px;
+                }
+            }
+
+            @keyframes dot2_ {
+
+                3%,
+                97% {
+                    height: 90px;
+                    width: 150px;
+                    margin-left: -75px;
+                    margin-top: -45px;
+                }
+
+                30%,
+                36% {
+                    width: 70px;
+                    height: 96px;
+                    margin-left: -35px;
+                    margin-top: -48px;
+                }
+
+                63%,
+                69% {
+                    width: 32px;
+                    height: 60px;
+                    margin-left: -16px;
+                    margin-top: -30px;
+                }
+            }
+
+            @keyframes dot3_ {
+
+                3%,
+                97% {
+                    height: 20px;
+                    width: 40px;
+                    margin-left: -20px;
+                    margin-top: 50px;
+                }
+
+                30%,
+                36% {
+                    width: 8px;
+                    height: 8px;
+                    margin-left: -5px;
+                    margin-top: 49px;
+                    border-radius: 8px;
+                }
+
+                63%,
+                69% {
+                    width: 16px;
+                    height: 4px;
+                    margin-left: -8px;
+                    margin-top: -37px;
+                    border-radius: 10px;
+                }
+            }
+        }
     </style>
 </head>
 
@@ -263,6 +396,11 @@
     </header>
 
     <main>
+        <div class="loader-container" style="display:none;">
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+        </div>
         <div id="news-container"></div>
     </main>
 
@@ -270,6 +408,7 @@
         async function fetchNews() {
             const query = document.getElementById("queryInput").value.trim();
             const container = document.getElementById("news-container");
+            const loaderContainer = document.querySelector(".loader-container");
             container.innerHTML = ""; // Clear previous results
 
             if (!query) {
@@ -277,13 +416,17 @@
                 return;
             }
 
+            loaderContainer.style.display = "block"; // Show loader
+
             const url = `/api/news?query=${encodeURIComponent(query)}`;
 
             try {
                 const res = await fetch(url);
                 const data = await res.json();
 
-                if (data.articles.length === 0) {
+                loaderContainer.style.display = "none"; // Hide loader
+
+                if (!data.articles || data.articles.length === 0) {
                     container.innerHTML = "<p>No news found for this topic.</p>";
                     return;
                 }
@@ -304,10 +447,16 @@
                     container.appendChild(card);
                 });
             } catch (error) {
+                loaderContainer.style.display = "none"; // Hide loader on error
                 console.error("Error fetching news:", error);
                 container.innerHTML = "<p>Error loading news. Please try again later.</p>";
             }
         }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const loaderContainer = document.querySelector(".loader-container");
+            loaderContainer.style.display = "none"; // Hide loader initially
+        });
     </script>
 </body>
 
